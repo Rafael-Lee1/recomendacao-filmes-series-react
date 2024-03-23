@@ -1,47 +1,121 @@
 /* Estilos para o corpo da página */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
 
-  /* Estilos para a div que contém o conteúdo */
-  #root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  /* Estilos para a caixa que envolve o conteúdo */
-  .container {
-    background-color: #ffffff;
+/* Estilos para a caixa que envolve o conteúdo */
+.container {
+    background: linear-gradient(to bottom, #4CAF50, #FFFFFF); /* Substitua as cores conforme desejado */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-  }
+}
 
-  /* Estilos para o título */
-  .title {
+/* Estilos para o título */
+.title {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 70px;
+    animation: swing 2s ease-in-out infinite alternate;
   }
 
-  /* Estilos para a lista de filmes */
-  .movie-list {
+  @keyframes swing {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/* Estilos para a lista de filmes */
+.movie-list {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+    display: flex; /* Usar flexbox para organizar os itens */
+    flex-wrap: wrap; /* Permitir que os itens quebrem para a próxima linha */
+    justify-content: center; /* Alinhar os itens ao centro horizontalmente */
+}
 
-  /* Estilos para cada item da lista de filmes */
-  .movie-item {
+/* Estilos para cada item da lista de filmes */
+.movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinhar os itens ao centro verticalmente */
     padding: 10px;
     border-bottom: 1px solid #ccc;
-  }
+    width: 200px; /* Definir uma largura fixa para cada item */
+    margin: 10px; /* Adicionar margem entre os itens */
+    text-align: center; /* Alinhar o conteúdo ao centro */
+}
 
-  /* Estilos para o último item da lista de filmes (remover a borda inferior) */
-  .movie-item:last-child {
+/* Estilos para o último item da lista de filmes (remover a borda inferior) */
+.movie-item:last-child {
     border-bottom: none;
-  }
+}
+
+/* Novos estilos para o pôster e detalhes do filme */
+.poster {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px; /* Adicionar espaço entre a imagem e o texto */
+}
+
+.movie-details {
+    text-align: center;
+}
+
+.movie-title {
+    font-size: 18px;
+    margin-bottom: 5px; /* Adicionar espaço entre o título e a descrição */
+}
+
+.movie-overview {
+    font-size: 14px;
+}
+
+/* Estilos adicionais do arquivo App.css */
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
