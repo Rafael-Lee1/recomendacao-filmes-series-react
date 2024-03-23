@@ -1,0 +1,47 @@
+/* Estilos para o corpo da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  /* Estilos para a div que contém o conteúdo */
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Estilos para a caixa que envolve o conteúdo */
+  .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  /* Estilos para o título */
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para a lista de filmes */
+  .movie-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Estilos para cada item da lista de filmes */
+  .movie-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Estilos para o último item da lista de filmes (remover a borda inferior) */
+  .movie-item:last-child {
+    border-bottom: none;
+  }
