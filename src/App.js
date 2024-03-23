@@ -10,7 +10,7 @@ function PopularMovies() {
     async function fetchPopularMovies() {
       try {
         const response = await axios.get(
-          `https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY_HERE`
+          `https://api.themoviedb.org/3/movie/popular?api_key=cb585cc2bd305d8f4092aeacaee36c05`
         );
         setMovies(response.data.results);
       } catch (error) {
