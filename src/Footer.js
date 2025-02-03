@@ -4,7 +4,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2024 Popular Movies App. Todos os direitos reservados.</p>
+      <p>&copy; 2024 CineMatch App. Todos os direitos reservados.</p>
     </footer>
   );
 }

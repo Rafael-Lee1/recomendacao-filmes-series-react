@@ -13,7 +13,7 @@ function PopularMovies() {
         );
         setMovies(response.data.results);
       } catch (error) {
-        console.error('Error fetching popular movies: ', error);
+        console.error('Error fetching CineMatch: ', error);
       }
     }
 
@@ -22,7 +22,7 @@ function PopularMovies() {
 
   return (
     <div className="container">
-      <h2 className="title">Popular Movies</h2>
+      <h2 className="title">CineMatch</h2>
       <div className="movie-list">
         {movies.map((movie) => (
           <div key={movie.id} className="movie-item">
