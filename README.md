@@ -1,3 +1,6 @@
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Rafael-Lee1/Icons/blob/396d1ae9ea3651914da875d423d5b2f3f341fa01/Movies_Recomendation.png">
+</p>
 
 *Você pode acessar o projeto clicando <a href="https://recomendacao-filmes-series-react-production.up.railway.app/">aqui</a>.</p>
 
