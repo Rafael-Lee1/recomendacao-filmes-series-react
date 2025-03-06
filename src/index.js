@@ -1,12 +1,11 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client'; // Importe createRoot
-import App from './App';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 import './index.css';
 
-// Substitua ReactDOM.render por createRoot
 const container = document.getElementById('root');
-const root = createRoot(container); // Crie uma raiz
+const root = createRoot(container);
 
 root.render(
   <BrowserRouter>
