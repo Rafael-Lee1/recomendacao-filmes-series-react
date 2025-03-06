@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Estilos globais */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Container principal */
+  .container {
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
+
+  /* Cabeçalho */
+  .header {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* Barra de busca */
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 14px;
+  }
+
+  /* Filtros */
+  .filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  /* Botão de alternar tema */
+  .theme-toggle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4757;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+  }
+
+  .theme-toggle:hover {
+    background-color: #ff6b81;
+  }
+
+  /* Lista de filmes */
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .movie-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .movie-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .poster {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .movie-details {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .movie-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+  .movie-overview {
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Rodapé */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .footer.dark-mode {
+    background-color: #1e1e1e;
+  }
+
+  /* Efeito de carregamento */
+  .loading {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+  }
